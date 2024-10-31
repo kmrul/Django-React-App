@@ -27,14 +27,15 @@ python manage.py runserver
 npm create vite@latest frontend -- --template react
 ```
 
+
+### Install react libray
+```
+npm install axios react-router-dom jwt-decode
+```
+
 ### Run frontend
 ```
 cd frontend
 npm install
 npm run dev
-```
-
-### Install react libray
-```
-npm install axios react-router-dom jwt-decode
 ```
