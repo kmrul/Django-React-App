@@ -1,6 +1,6 @@
 # Django React App
 
-## backend 
+## **Backend**
 
 ### create & active virtual environment
 ```
@@ -20,7 +20,7 @@ python manage.py runserver
 ```
 
 
-## frontend
+## **Frontend**
 
 ### For only create new react
 ```
