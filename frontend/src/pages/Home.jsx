@@ -17,7 +17,10 @@ function Home() {
     api.
       get("api/notes/")
       .then((res)  => res.data)
-      .then((data) => {setNotes(data); console.log(data);})
+      .then((data) => {
+        setNotes(data); 
+        console.log(data);
+      })
       .catch((error) => alert(error))
   }
 
@@ -40,6 +43,9 @@ function Home() {
       else 
         alert("Failed to create note.")
     }).catch((error) => alert(error));
+    
+    setContent("");
+    setTitle("");
 
     getNotes();
   }
