@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 import api from "../api"
 import Note from '../components/Note'
 import "../styles/Home.css"
+import Navbar from '../components/Navbar'
 
 function Home() {
   const [notes, setNotes] = useState([])
@@ -45,7 +46,7 @@ function Home() {
 
   return (
     <div>
-      
+      <Navbar/>
       <h2 className='note-head-title'>Create a Note</h2>
       <form onSubmit={createNote}>
         <label htmlFor='title'>Title:</label>
