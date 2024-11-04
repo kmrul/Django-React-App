@@ -19,7 +19,6 @@ function Home() {
       .then((res)  => res.data)
       .then((data) => {
         setNotes(data); 
-        console.log(data);
       })
       .catch((error) => alert(error))
   }
@@ -53,7 +52,8 @@ function Home() {
   return (
     <div>
       <Navbar/>
-      <h2 className='note-head-title'>Create a Note</h2>
+      <br/>
+      <h2 className='text-4xl note-head-title'>Create a Note</h2>
       <form onSubmit={createNote}>
         <label htmlFor='title'>Title:</label>
         <br/>
@@ -81,10 +81,13 @@ function Home() {
       </form>
 
       <div>
-        <h2>Notes List</h2>
-        { notes.map((note) => (
-          <Note note={note} onDelete={deleteNote} key={note.id}/>
-        ))}
+        <h2 className='text-2xl'>Notes List</h2>
+        <div className="grid grid-cols-4 gap-4">
+          { notes.map((note) => (
+            <Note note={note} onDelete={deleteNote} key={note.id}/>
+          ))}
+        </div>
+        
       </div>
     </div>
   )

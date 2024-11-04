@@ -7,4 +7,4 @@ npm install
 npm run dev
 
 # 
-npm install axios react-router-dom jwt-decode
+npm install axios react-router-dom jwt-decode @headlessui/react

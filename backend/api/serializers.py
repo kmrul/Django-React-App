@@ -12,6 +12,11 @@ class UserSerializer(serializers.ModelSerializer):
         user = User.objects.create_user(**validated_data)
         return user
     
+class UserNameSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['username']
+    
     
 class NoteSerializer(serializers.ModelSerializer):
     class Meta:
